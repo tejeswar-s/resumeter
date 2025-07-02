@@ -142,7 +142,7 @@ export default function Auth({ onAuth }) {
     const password = formData.get('password');
 
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch('https://resumeter-backend.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -182,7 +182,7 @@ export default function Auth({ onAuth }) {
     const password = formData.get('password');
 
     try {
-      const response = await fetch('/api/auth/signup', {
+      const response = await fetch('https://resumeter-backend.onrender.com/api/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -197,7 +197,7 @@ export default function Auth({ onAuth }) {
       }
 
       // After successful signup, automatically log them in to get the token
-      const loginResponse = await fetch('/api/auth/login', {
+      const loginResponse = await fetch('https://resumeter-backend.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
