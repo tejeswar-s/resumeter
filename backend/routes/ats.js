@@ -9,7 +9,8 @@ const Analysis = require('../models/Analysis');
 const User = require('../models/User');
 const { requireAuth, requireAdmin } = require('./auth');
 const { Configuration, OpenAIApi } = require('openai');
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+// const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OPENAI_API_KEY = '';
 let openai = null;
 if (OPENAI_API_KEY) {
   openai = new OpenAIApi(new Configuration({ apiKey: OPENAI_API_KEY }));

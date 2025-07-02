@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Card, Button, Spinner, Alert, Row, Col, Form } from 'react-bootstrap';
 import { FaCheckCircle, FaChartBar, FaLightbulb, FaFileUpload, FaDownload } from 'react-icons/fa';
 
-const API_BASE = 'https://resumeter.onrender.com/api/ats';
+const API_BASE = 'http://localhost:5000/api/ats';
 
 const LiveResumeEditor = () => {
   const [resume, setResume] = useState('');
