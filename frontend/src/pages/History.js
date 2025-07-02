@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaEye, FaTrash, FaChartBar, FaCalendarAlt, FaUser, FaDownload } from 'react-icons/fa';
 import styles from './History.module.scss';
 
-const API_BASE = 'http://localhost:5000/api/ats';
+const API_BASE = 'https://resumeter-backend.onrender.com/api/ats';
 
 const History = () => {
   const [analyses, setAnalyses] = useState([]);

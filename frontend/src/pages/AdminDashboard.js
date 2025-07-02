@@ -4,7 +4,7 @@ import { FaUsers, FaChartBar, FaCalendarAlt, FaEye, FaCrown } from 'react-icons/
 import AnalysisDetails from './AnalysisDetails';
 import styles from './AdminDashboard.module.scss';
 
-const API_BASE = 'http://localhost:5000/api/ats';
+const API_BASE = 'https://resumeter-backend.onrender.com/api/ats';
 
 const AdminDashboard = () => {
   const [data, setData] = useState({ users: [], analyses: [] });

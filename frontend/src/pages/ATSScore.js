@@ -4,7 +4,7 @@ import { useDropzone } from 'react-dropzone';
 import { useNavigate } from 'react-router-dom';
 import styles from './ATSScore.module.scss';
 
-const API_BASE = 'http://localhost:5000/api/ats';
+const API_BASE = 'https://resumeter-backend.onrender.com/api/ats';
 
 const DropzoneBox = ({ onDrop, accept, label, file }) => {
   const {

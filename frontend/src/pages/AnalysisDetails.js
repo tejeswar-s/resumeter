@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, Spinner, Alert, Badge } from 'react-bootstrap';
 
-const API_BASE = 'http://localhost:5000/api/ats';
+const API_BASE = 'https://resumeter-backend.onrender.com/api/ats';
 
 const AnalysisDetails = ({ analysis: propAnalysis, adminView }) => {
   const { id } = useParams();
