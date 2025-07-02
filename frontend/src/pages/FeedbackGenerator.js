@@ -3,7 +3,7 @@ import { Card, Button, Alert, Spinner, Container, Row, Col } from 'react-bootstr
 import { useNavigate } from 'react-router-dom';
 import { FaLightbulb, FaCheckCircle } from 'react-icons/fa';
 
-const API_BASE = 'http://localhost:5000/api/ats';
+const API_BASE = 'https://resumeter.onrender.com/api/ats';
 
 const FeedbackGenerator = () => {
   const [feedback, setFeedback] = useState('');
