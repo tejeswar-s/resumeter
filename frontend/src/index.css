@@ -1,0 +1,241 @@
+/* Import Bootstrap CSS for professional styling */
+@import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css';
+
+/* You can add custom Bootstrap overrides or additional styles below if needed */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern, clean base styles for the app */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: var(--bs-body-bg, #f8f9fa);
+    color: var(--bs-body-color, #181a1b);
+    min-height: 100vh;
+    transition: background 0.5s, color 0.5s;
+}
+
+body::before {
+    content: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: inherit;
+}
+
+p,
+.lead {
+    color: #64748b;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+.card {
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
+}
+
+.btn,
+.btn:focus {
+    border-radius: 0.5rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+input,
+textarea,
+select {
+    border-radius: 0.5rem !important;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #e9ecef;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+    border-radius: 4px;
+}
+
+/* Utility classes */
+.rounded-xl {
+    border-radius: 1.25rem !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+.gap-2 {
+    gap: 0.5rem !important;
+}
+
+.gap-3 {
+    gap: 1rem !important;
+}
+
+/* Light/Dark mode helpers */
+body.dark-mode {
+    --bs-body-bg: #181a1b;
+    --bs-body-color: #f8f9fa;
+    background: #181a1b !important;
+    color: #f8f9fa !important;
+}
+
+body.light-mode {
+    --bs-body-bg: #f8f9fa;
+    --bs-body-color: #181a1b;
+    background: #f8f9fa !important;
+    color: #181a1b !important;
+}
+
+/* Animations */
+.animate__fadeInUp {
+    animation: fadeInUp 0.7s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.create-account-btn:hover,
+.create-account-btn:focus {
+    color: #764ba2 !important;
+    background: #fff !important;
+    border-color: #fff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .btn:hover,
+.navbar .btn:focus {
+    text-decoration: none !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 991.98px) {
+
+    h1,
+    .display-4 {
+        font-size: 2.2rem !important;
+    }
+
+    .hero-banner,
+    .atsScorePage,
+    .card {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    h1,
+    .display-4 {
+        font-size: 1.6rem !important;
+    }
+
+    .lead,
+    p,
+    .card-title,
+    .card-header,
+    .card-body {
+        font-size: 1rem !important;
+    }
+
+    .d-flex.gap-3,
+    .d-flex.gap-2 {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+    }
+
+    .card,
+    .container,
+    .atsScorePage {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .card {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+
+    .form-control,
+    input,
+    textarea,
+    select {
+        width: 100% !important;
+        font-size: 1rem !important;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    h1,
+    .display-4 {
+        font-size: 1.2rem !important;
+    }
+
+    .hero-banner,
+    .atsScorePage,
+    .card {
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+
+    .btn,
+    .form-control {
+        font-size: 0.98rem !important;
+        padding: 0.6em 1em !important;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1rem !important;
+    }
+}
